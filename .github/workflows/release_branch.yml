@@ -1,0 +1,13 @@
+name: Release Branch Created
+
+on:
+  push:
+    branches: [ releases/* ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Calls endpoint
+        run: curl https://5dc7-203-125-187-198.ngrok.io/
